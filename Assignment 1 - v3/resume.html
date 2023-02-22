@@ -1,0 +1,137 @@
+<!-- 
+    Student Name: Alex Hulford
+    Lab Professor: Alemeseged Legesse
+    Lab Section: 304
+    Description: Assignment 1 -  My personal landing page
+    Date Modified: Feb 22nd, 2023
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alex Hulford">
+    <title>Hulsy | Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/6154c4b8d1.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="container">
+        <div class="flex-layout top-row">
+            <a href="index.html"><i class="fa-solid fa-helicopter-symbol icon"></i></a>
+
+            <nav>
+                <ul class="flex-layout navbar">
+                    <li><a class="highlight-text-fast" href="index.html">Home</a></li>
+                    <li><a class="highlight-text-fast" href="resume.html">Resume</a></li>
+                    <li><a class="highlight-text-fast" href="courses.html">Courses</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- <form action="/theme" class="theme-selector">
+            <fieldset>
+                <legend hidden>Pick a colour scheme</legend>
+                <input type="radio" name="theme" id="dark" checked>
+                <input type="radio" name="theme" id="light">
+            </fieldset>
+        </form> -->
+        <h1 class="page-title-sm">Resume</h1>
+    </header>
+    <div class="inverse-color grid-container">
+        <div class="container">
+            <a href="assets/AlexHulford-Resume.pdf" class="highlight-text-fast" id="resume">Resume PDF</a>
+        </div>
+        <section class="resume grid-layout">
+            <div class="column" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <ul>
+                    <li class="resumeList"><b>Programming Languages:</b> Java, SQL, JavaScript, PHP, HTML/CSS,
+                        TypeScript</li>
+                    <li class="resumeList"><b>Operating Systems:</b> Windows, Linux, Ubuntu, Mac OS</li>
+                    <li class="resumeList"><b>Database Management Systems:</b> Oracle, MySQL, SQL Server, PostgreSQL,
+                        Microsoft Access</li>
+                    <li class="resumeList"><b>Software Tools</b> VS Code, Eclipse, Oracle SQL Developer, MySQL
+                        Workbench, Android Studio,
+                        IntelliJ IDEA, VMware Workstation, XAMPP, Microsoft Office (Word, Excel, Outlook)</li>
+                </ul>
+            </div>
+            <div class="column" id="education">
+                <h2 class="section-title">Education</h2>
+                <ul>
+                    <li class="resumeList"><b>Diploma in Computer Progamming - Algonquin College</b></li>
+                    <li class="resumeList">GPA 3.90 - Graduation April 2024</li>
+                    <li class="resumeList"><b>Bachelor of Business Administration (Concentration in Finance) - Davenport
+                            University</b></li>
+                    <li class="resumeList">GPA 3.93 - Graduation April 2019</li>
+                </ul>
+            </div>
+            <div class="column" id="experience">
+                <h2 class="section-title">Related Experience</h2>
+                <ul>
+                    <li class="resumeList"><b>Highschool Database Design Project:</b></li>
+                    <li class="resumeList">Developed a design document outlining all business rules and potential
+                        entities for the database.</li>
+                    <li class="resumeList">Used MySQL Workbench to create a physical ERD diagram of a database for a
+                        fictional high school.</li>
+                    <li class="resumeList">Wrote DDL/DML SQL code to create the tables and populate them with data.</li>
+                    <li class="resumeList"><b>Saikaley Realty Website Design:</b></li>
+                    <li class="resumeList">Designed a dynamic website for a realty company using
+                        HTML/CSS/Bootstrap/JavaScript/PHP.</li>
+                    <li class="resumeList">Created a responsive design layout that is functional and aesthetic on all
+                        screen sizes.</li>
+                    <li class="resumeList"><b>Flappy Bird Style Game:</b></li>
+                    <li class="resumeList">Developed a Flappy Bird style game using Java LibGDX and Android Studio.</li>
+                    <li class="resumeList">Implemented OOP principles like abstraction/inheritance to create game
+                        screens and player character.</li>
+                    <li class="resumeList">Created logic to control a game loop including states for main menu,
+                        gameplay, and a game over screen.</li>
+                </ul>
+            </div>
+            <div class="column" id="project">
+                <h2 class="section-title">Project Links</h2>
+                <ul>
+                    <li>
+                        <a class="project-link" href="https://hulsy.github.io/">Saikaley Realty</a>
+                    </li>
+                    <li>
+                        <a class="project-link" href="https://github.com/hulsy/crypto">Solana Token - Hulsy Coin</a>
+                    </li>
+                    <li>
+                        <a class="project-link"
+                            href="https://github.com/hulsy/GameDev/tree/main/FallenGame/core/src/com/alexhulford">Fallen
+                            Game
+                            (Flappy Bird Clone)</a>
+                    </li>
+                    <li>
+                        <a class="project-link"
+                            href="https://github.com/hulsy/Javascript-Code/tree/main/RandomColourGen">Random Colour
+                            Generator Web App</a>
+                    </li>
+                    <li>
+                        <a class="project-link"
+                            href="https://github.com/hulsy/Java-Code/tree/main/AdventOfCode2022">Advent of Code 2022</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <footer class="flex-layout bottom-row container">
+        <div>
+            <a href="https://www.linkedin.com/in/alex-hulford-3469aa250/"><i class="fa-brands fa-linkedin icon"></i></a>
+        </div>
+        <div>
+            <a href="https://github.com/hulsy"><i class="fa-brands fa-github icon"></i></a>
+        </div>
+        <div>
+            <a href="https://twitter.com/AlexHulford"><i class="fa-brands fa-square-twitter icon"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>

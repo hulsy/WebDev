@@ -1,0 +1,6 @@
+- change projects/experience sections on resume Page
+- WIREFRAME
+- comments
+- proper references
+
+-maybe.. update code for sort function, change theme picker to use javascript

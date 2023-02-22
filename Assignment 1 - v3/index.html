@@ -1,0 +1,101 @@
+<!-- 
+    Student Name: Alex Hulford
+    Lab Professor: Alemeseged Legesse
+    Lab Section: 304
+    Description: Assignment 1 -  My personal landing page
+    Date Modified: Feb 22nd, 2023
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alex Hulford">
+    <title>Hulsy | Front-End</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/6154c4b8d1.js" crossorigin="anonymous"></script>
+    <script src="index.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="container">
+        <div class="flex-layout top-row">
+            <a href="index.html"><i class="fa-solid fa-helicopter-symbol icon"></i></a>
+
+            <nav>
+                <ul class="flex-layout navbar">
+                    <li><a class="highlight-text-fast" href="index.html">Home</a></li>
+                    <li><a class="highlight-text-fast" href="resume.html">Resume</a></li>
+                    <li><a class="highlight-text-fast" href="courses.html">Courses</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- <form action="/theme" class="theme-selector">
+            <fieldset>
+                <legend hidden>Pick a colour scheme</legend>
+                <input type="radio" name="theme" id="dark" checked>
+                <input type="radio" name="theme" id="light">
+            </fieldset>
+        </form> -->
+        <h1 class="page-title">Alex Hulford</h1>
+    </header>
+    <main class="container">
+        <h2 class="section-title">Web Development</h2>
+        <p>I'm a computer programming student at Algonquin College. <span class="highlight-text bigger">I'm passionate
+                about web development and creating awesome user experiences.</span>
+            Right now I'm in the learning process and this website is an evolving demonstration of my skills. Come back
+            and check it out later on, I'm sure there will be plenty of new features!</p>
+    </main>
+    <div class="inverse-color">
+        <section class="container">
+
+            <h2 class="section-title">About Me</h2>
+            <div class="flex-layout" id="about">
+                <img src="assets/AlexHeadshot.jpg" alt="Alex's professional headshot" id="headshot">
+                <img src="assets/collegehockey.jpg" alt="Alex in collegiate hockey uniform" id="hockey" class="hidden">
+                <p>I am a <b>hockey player</b> and a <b>golfer</b> at heart. I played hockey at Davenport University in
+                    Michigan and I
+                    continue to
+                    play and coach hockey today.
+                    <b>Coaching hockey</b> has become a passion of mine, I absolutely love passing on my years of
+                    experience
+                    to the
+                    next generation. I've also
+                    always been a bit of a <b>computer nerd</b>, playing video games throughout my life. I would love to
+                    design an
+                    indie game of my own and a big goal
+                    of mine is to compete in a game jam competition.
+                </p>
+            </div>
+            <button id="next-picture-btn">CLICK ME!</button>
+        </section>
+    </div>
+    <section class="container">
+        <h2 class="section-title">Algonquin College- School of Advanced Technology</h2>
+        <p>I am studying computer programming in the Algonquin School of Advanced Technology. My courses cover
+            object-oriented programming,
+            web development, linux, and other key skills to be succesful in the programming industry. I am in a 2-year
+            accelerated program with a Co-op work term starting
+            September 2023. I will be actively looking for exciting opportunities for my co-op term very soon! </p>
+        <a href="https://www.algonquincollege.com/sat/" class="highlight-text-fast" id="acLink">AC - Webpage</a>
+    </section>
+    <footer class="flex-layout bottom-row container">
+        <div>
+            <a href="https://www.linkedin.com/in/alex-hulford-3469aa250/"><i class="fa-brands fa-linkedin icon"></i></a>
+        </div>
+        <div>
+            <a href="https://github.com/hulsy"><i class="fa-brands fa-github icon"></i></a>
+        </div>
+        <div>
+            <a href="https://twitter.com/AlexHulford"><i class="fa-brands fa-square-twitter icon"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>

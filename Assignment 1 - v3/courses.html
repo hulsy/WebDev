@@ -1,0 +1,248 @@
+<!-- 
+    Student Name: Alex Hulford
+    Lab Professor: Alemeseged Legesse
+    Lab Section: 304
+    Description: Assignment 1 -  My personal landing page
+    Date Modified: Feb 22nd, 2023
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alex Hulford">
+    <title>Hulsy | Courses</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/6154c4b8d1.js" crossorigin="anonymous"></script>
+    <script src="app.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="container">
+        <div class="flex-layout top-row">
+            <a href="index.html"><i class="fa-solid fa-helicopter-symbol icon"></i></a>
+
+            <nav>
+                <ul class="flex-layout navbar">
+                    <li><a class="highlight-text-fast" href="index.html">Home</a></li>
+                    <li><a class="highlight-text-fast" href="resume.html">Resume</a></li>
+                    <li><a class="highlight-text-fast" href="courses.html">Courses</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- <form action="/theme" class="theme-selector">
+            <fieldset>
+                <legend hidden>Pick a colour scheme</legend>
+                <input type="radio" name="theme" id="dark" checked>
+                <input type="radio" name="theme" id="light">
+            </fieldset>
+        </form> -->
+        <h1 class="page-title-sm">Course List</h1>
+    </header>
+    <section class="inverse-color grid-container">
+        <div class="container secondary-nav">
+            <div class="search-bar">
+                <input type="text" class="search-input" id="search-input" placeholder="Search for a course...">
+                <button class="icon-button no-theme course-button" id="search-button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+        <div class="flex-layout container filter-sort-options">
+            <div class="flex-layout filter-sort-options">
+                <label for="sortUp">Sort By Level:</label>
+                <button id="sortUp" name="sort" class="course-button icon-button">
+                    <i class="fa-solid fa-sort-up"></i>
+                </button>
+                <button id="sortDown" name="sort" class="course-button icon-button">
+                    <i class="fa-solid fa-sort-down"></i>
+                </button>
+            </div>
+
+            <div class="flex-layout filter-sort-options">
+                <label for="filter">Filter: </label>
+                <select name="filter" id="filter">
+                    <option value="" selected>--Select level--</option>
+                    <option value="level-1">Level 1</option>
+                    <option value="level-2">Level 2</option>
+                </select>
+            </div>
+        </div>
+        <div class="courses container flex-layout"> <!-- grid-layout -->
+            <ul id="course-list">
+                <li class="card level-1">
+                    <div class="flex-layout course-layout">
+                        <h2 class="course-name">Intro to Programming</h2>
+                        <img src="assets/introprog.jpg" alt="thumbnail for intro to programming course"
+                            class="thumbnail">
+                    </div>
+                    <h3>Level 1</h3>
+                    <p> <b>Course Description:</b> Fundamentals of logic, problem-solving and programming language
+                        structure. Emphasis on problem
+                        analysis and design, using algorithms, pseudocode, flowcharts,
+                        UML Class Diagrams and testing, with the Java programming language used as a means to implement
+                        problem solution designs. Students use
+                        sequential structures, selection structures, repetition structures, variables, constants,
+                        methods,
+                        constructors, one-dimensional arrays, object-oriented programming, classes, objects,
+                        abstraction,
+                        encapsulation, inputs, outputs, coding conventions and documentation.</p>
+                </li>
+                <li class="card level-2">
+                    <div class="flex-layout course-layout">
+                        <h2 class="course-name">Object Oriented Programming</h2>
+                        <img src="assets/oop.jpg" alt="thumbnail for object oriented programming course"
+                            class="thumbnail">
+                    </div>
+                    <h3>Level 2</h3>
+                    <p><b>Course Description:</b> Students explore object-oriented programming methodology using the
+                        Java programming language.
+                        Object
+                        oriented concepts, such as encapsulation, inheritance, abstraction and polymorphism are covered
+                        and
+                        reinforced with practical applications. Students explore the basics of data structures and
+                        algorithms as well as basic Graphical User Interface (GUI) programming.</p>
+                </li>
+                <li class="card level-1">
+                    <div class="flex-layout course-layout">
+                        <h2 class="course-name">Introduction to Database</h2>
+                        <img src="assets/database1.jpg" alt="thumbnail for introduction to database course"
+                            class="thumbnail">
+                    </div>
+                    <h3>Level 1</h3>
+                    <p> Students learn the fundamentals of relational databases design using Entity Relation Diagrams
+                        (ERDs), and use Structured Query Language (SQL) to create, modify and query a database. Students
+                        design and create databases that are maintainable, secure and adaptable to change in business
+                        requirements, using normalization. </p>
+                </li>
+                <li class="card level-2">
+                    <div class="flex-layout course-layout">
+                        <h2 class="course-name">Database Systems</h2>
+                        <img src="assets/oracle.jpg" alt="thumbnail for database systems course" class="thumbnail">
+                    </div>
+                    <h3>Level 2</h3>
+                    <p>Students obtain hands-on experience with advanced engineering modeling tools along with SQL, SQL
+                        scripts and programming with Oracle's PL/SQL blocks. Database concepts covered include advanced
+                        SQL,
+                        case structures, rollup and cube operations, metadata manipulation, data storage and retrieval,
+                        security and transaction control and data warehousing</p>
+                </li>
+                <li class="card level-2">
+                    <div class="flex-layout course-layout">
+                        <h2 class="course-name">Web Programming</h2>
+                        <img src="assets/webdev.jpg" alt="thumbnail for web programming course" class="thumbnail">
+                    </div>
+                    <h3>Level 2</h3>
+                    <p>Students develop basic skills of web programming, website design and implementation. JavaScript,
+                        HTML5, and PHP are used to explore web-based solutions to problems of increasing interactivity
+                        and
+                        complexity. Lectures are reinforced by practical assignments that encourage students to
+                        construct
+                        and maintain their own websites.</p>
+                </li>
+                <li class="card level-2">
+                    <div class="flex-layout course-layout">
+                        <h2 class="course-name">Operating Systems Fundamentals (Linux/GNU)</h2>
+                        <img src="assets/linux.jpg" alt="thumbnail for operating systems course" class="thumbnail">
+                    </div>
+                    <h3>Level 2</h3>
+                    <p>Students examine the details of operating system structures, process management, storage
+                        management,
+                        installation, configuration, and administration both in theory and through practical assignments
+                        based on the GNU/Linux operating system. Lab work is designed to implement the theory by
+                        developing
+                        skills using the powerful GNU/Linux command-line tools and utilities.</p>
+                </li>
+                <li class="card level-1">
+                    <div class="flex-layout course-layout">
+                        <h2 class="course-name">Computer Essentials</h2>
+                        <img src="assets/windows.jpg" alt="thumbnail for computer essentials course" class="thumbnail">
+                    </div>
+                    <h3>Level 1</h3>
+                    <p>Students create backups, install virus protection, and manage files through a basic understanding
+                        of
+                        the Windows Operating System. Students also install and configure the Windows Operating System,
+                        and
+                        a virtual machine environment and explore computer organization including basic numerical
+                        systems,
+                        functional hardware and software components needed to run programs</p>
+                </li>
+                <li class="card level-1">
+                    <div class="flex-layout course-layout">
+                        <h2 class="course-name">Tech Math for Computer Science</h2>
+                        <img src="assets/math.jpg" alt="thumbnail for tech math course" class="thumbnail">
+                    </div>
+                    <h3>Level 1</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, porro consequatur corporis
+                        deleniti, voluptatum et eveniet recusandae iure aliquid eos error, assumenda asperiores itaque
+                        fuga.
+                        Facilis vero repellendus pariatur facere?</p>
+                </li>
+                <li class="card level-1">
+                    <div class="flex-layout course-layout">
+                        <h2 class="course-name">Communications</h2>
+                        <img src="assets/comms.jpg" alt="thumbnail for communications course" class="thumbnail">
+                    </div>
+                    <h3>Level 1</h3>
+                    <p>Students focus on meeting the requirements of effective communication. Through a combination of
+                        lectures, exercises, and independent learning, students practise writing, speaking, reading,
+                        listening, locating and documenting information and using technology to communicate
+                        professionally.
+                    </p>
+                </li>
+                <li class="card level-2">
+                    <div class="flex-layout course-layout">
+                        <h2 class="course-name">Technical Communications for English Technology</h2>
+                        <img src="assets/techcomms.jpg" alt="thumbnail for technical communications course"
+                            class="thumbnail">
+                    </div>
+                    <h3>Level 2</h3>
+                    <p>The ability to communicate effectively in a technically-oriented interdisciplinary workplace is a
+                        foundational skill in an innovation-driven economy. Students are exposed to exercises and
+                        assignments designed to foster independent and collaborative critical thinking, research,
+                        writing,
+                        visual communication and presentation skills related to technical topics.</p>
+                </li>
+                <li class="card level-2">
+                    <div class="flex-layout course-layout">
+                        <h2 class="course-name">Cooperative Education Readiness</h2>
+                        <img src="assets/coop.jpg" alt="thumbnail for cooperative education course" class="thumbnail">
+                    </div>
+                    <h3>Level 2</h3>
+                    <p>Through a detailed orientation students learn the cooperative education program policies and
+                        procedures related to searching and securing a work term opportunity. Students identify their
+                        strengths and transferable skills and participate in workshop-style sessions that focus on cover
+                        letter and resume development, interview techniques and job search strategies.</p>
+                </li>
+                <li class="card level-1">
+                    <div class="flex-layout course-layout">
+                        <h2 class="course-name">Achieving Success in Changing Environments</h2>
+                        <img src="assets/success.jpg" alt="thumbnail for achieving success course" class="thumbnail">
+                    </div>
+                    <h3>Level 1</h3>
+                    <p>Students explore the possibilities ahead, assess their own aptitudes and strengths, and apply
+                        critical thinking and decision-making tools to help resolve some of the important issues in our
+                        complex society with its competing interests.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer class="flex-layout bottom-row container">
+        <div>
+            <a href="https://www.linkedin.com/in/alex-hulford-3469aa250/"><i class="fa-brands fa-linkedin icon"></i></a>
+        </div>
+        <div>
+            <a href="https://github.com/hulsy"><i class="fa-brands fa-github icon"></i></a>
+        </div>
+        <div>
+            <a href="https://twitter.com/AlexHulford"><i class="fa-brands fa-square-twitter icon"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>

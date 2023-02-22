@@ -1,0 +1,379 @@
+/*
+    Student Name: Alex Hulford
+    Lab Professor: Alemeseged Legesse
+    Lab Section: 304
+    Description: Assignment 1 -  My personal landing page
+    Date Modified: Feb 22nd, 2023
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-bg: black;
+  --color-inverse-bg: white;
+  --color-text: white;
+  --color-inverse-text: black;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.25rem;
+  min-height: 100vh;
+  min-height: 100dvh;
+  line-height: 1.5;
+  margin: 0;
+  text-align: left;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* .theme-selector > fieldset {
+  border: 0;
+  display: flex;
+  gap: 2rem;
+  width: fit-content;
+  padding: 1rem 3rem;
+  margin-inline: auto;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  background: white;
+  outline: 1px solid black;
+}
+
+.theme-selector input[type="radio"] {
+  appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  outline: 3px solid var(--radio-color);
+  outline-offset: 3px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.theme-selector input[type="radio"]:checked {
+  background-color: var(--radio-color);
+}
+
+.theme-selector input[type="radio"]#dark {
+  --radio-color: black;
+}
+
+.theme-selector input[type="radio"]#light {
+  --radio-color: aqua;
+}
+
+:root:has(#dark:checked) {
+  --color-bg: black;
+  --color-inverse-bg: white;
+  --color-text: white;
+  --color-inverse-text: black;
+}
+
+:root:has(#light:checked) {
+  --color-bg: white;
+  --color-inverse-bg: black;
+  --color-text: black;
+  --color-inverse-text: white;
+} */
+
+.container {
+  max-width: 50rem;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+section {
+  padding-block: 15rem;
+}
+main {
+  padding-bottom: 15rem;
+}
+
+.secondary-nav {
+  padding-bottom: 4rem;
+}
+
+.flex-layout {
+  display: flex;
+  gap: 2rem;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-areas:
+    "skills education experience"
+    "project project experience";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  /* grid-template-columns: repeat(3, 1fr); */
+  gap: 1.5rem;
+  margin: 1.5rem;
+  padding-block: revert;
+}
+
+#skills {
+  grid-area: skills;
+}
+#education {
+  grid-area: education;
+}
+#experience {
+  grid-area: experience;
+}
+#project {
+  grid-area: project;
+}
+
+.grid-container {
+  padding-block: 4rem;
+}
+
+.top-row,
+#about {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-bar {
+  display: flex;
+  border: 2px solid var(--color-bg);
+  background-color: white;
+  padding: 1rem;
+}
+
+.search-input {
+  flex: 1;
+  font-size: 1.5rem;
+  padding: 0 1rem;
+  border: 0;
+}
+
+.bottom-row {
+  justify-content: center;
+}
+
+.top-row,
+.bottom-row {
+  padding-block: 2rem;
+}
+
+.navbar,
+.bottom-row {
+  gap: 5rem;
+}
+
+.navbar {
+  margin-right: 2rem;
+}
+
+.page-title {
+  padding-top: 5rem;
+  font-size: 5rem;
+}
+
+.page-title-sm {
+  padding-top: 2.5rem;
+  font-size: 2.5rem;
+}
+
+.section-title,
+.page-title {
+  margin-block: 0;
+}
+
+.inverse-color {
+  background-color: var(--color-inverse-bg);
+  color: var(--color-inverse-text);
+}
+
+.bigger {
+  font-size: 1.4rem;
+}
+
+.highlight-text,
+.highlight-text-fast {
+  font-weight: 700;
+  background-image: linear-gradient(90deg, aqua, rgb(220, 255, 255));
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 300ms ease;
+}
+
+.highlight-text-fast {
+  transition: background-size 150ms ease;
+}
+
+.highlight-text:hover,
+.highlight-text-fast:hover {
+  cursor: pointer;
+  background-size: 100% 3px;
+}
+
+.icon {
+  font-size: 2.5rem;
+  transition: color 150ms ease-in;
+}
+
+.icon-button {
+  font-size: 1.75rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 150ms ease-in;
+}
+
+.no-theme {
+  color: black;
+}
+
+.icon:hover,
+#sortUp:hover,
+#sortDown:hover {
+  color: aqua;
+}
+
+.card,
+.column {
+  border: 1px solid var(--color-bg);
+  border-top: 5px solid var(--color-bg);
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.column {
+  text-align: center;
+}
+
+.card {
+  margin: 1rem;
+  text-align: left;
+}
+
+.course-layout {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.thumbnail {
+  height: 8rem;
+  width: 12rem;
+  border-radius: 0.5rem;
+}
+
+.resumeList {
+  padding: 0.75rem 0;
+}
+
+.project-link {
+  display: block;
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+  box-shadow: 10px 5px 5px black;
+}
+
+.project-link:hover {
+  background-color: lightgrey;
+}
+
+.hidden {
+  display: none;
+}
+
+.filter-sort-options {
+  justify-content: right;
+  gap: 0.5rem;
+}
+
+#resume {
+  display: block;
+  border: 1px solid var(--color-inverse-bg);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  padding: 1rem;
+  text-align: center;
+}
+
+#headshot,
+#hockey {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 0.5rem;
+}
+
+#next-picture-btn,
+#acLink {
+  width: 15rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border-color: var(--color-bg);
+  color: var(--color-inverse-text);
+  background-color: var(--color-inverse-bg);
+  font-weight: 700;
+}
+
+#next-picture-btn:hover {
+  cursor: pointer;
+  border-color: cyan;
+}
+
+#sortUp,
+#sortDown {
+  color: var(--color-inverse-text);
+}
+
+@media (max-width: 60em) {
+  .navbar {
+    gap: 1rem;
+  }
+  .page-title {
+    font-size: 3rem;
+  }
+
+  .icon-button,
+  .search-input {
+    font-size: 1.4rem;
+  }
+
+  .courses,
+  .resume {
+    display: block;
+  }
+
+  .column {
+    margin: 1rem;
+  }
+
+  .dropdown-options {
+    padding: 0.2rem;
+    font-size: 1rem;
+  }
+  .filter-sort-options {
+    display: block;
+    text-align: end;
+  }
+}
+
+@media (max-width: 30em) {
+  .search-input {
+    font-size: 1rem;
+  }
+
+  .thumbnail {
+    display: none;
+  }
+}
