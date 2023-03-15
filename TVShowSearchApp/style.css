@@ -1,0 +1,9 @@
+.title {
+  text-align: center;
+  margin: 2rem 0rem;
+}
+
+.input,
+.button {
+  margin: 0.2rem 0rem;
+}
